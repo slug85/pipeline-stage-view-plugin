@@ -39,9 +39,8 @@
     <url>https://wiki.jenkins-ci.org/display/JENKINS/Pipeline+Stage+View+Plugin</url>
 
     <scm>
-        <connection>scm:git:git://github.com/jenkinsci/pipeline-stage-view-plugin.git</connection>
-        <developerConnection>scm:git:git@github.com:jenkinsci/pipeline-stage-view-plugin.git</developerConnection>
-        <url>https://github.com/jenkinsci/pipeline-stage-view-plugin</url>
+        <connection>scm:git:git://github.com/slug85/pipeline-stage-view-plugin.git</connection>
+        <url>https://github.com/slug85/pipeline-stage-view-plugin</url>
         <tag>HEAD</tag>
     </scm>
 
@@ -75,6 +74,15 @@
                 <artifactId>maven-release-plugin</artifactId>
                 <configuration>
                     <tagNameFormat>pipeline-stage-view-@{project.version}</tagNameFormat>
+                </configuration>
+            </plugin>
+
+            <plugin>
+                <groupId>org.jenkins-ci.tools</groupId>
+                <artifactId>maven-hpi-plugin</artifactId>
+                <extensions>true</extensions>
+                <configuration>
+                    <disabledTestInjection>true</disabledTestInjection>
                 </configuration>
             </plugin>
         </plugins>

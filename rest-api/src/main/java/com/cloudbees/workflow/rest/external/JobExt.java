@@ -42,7 +42,7 @@ public class JobExt {
     /**
      * Max number of runs per page. Pagination not yet supported.
      */
-    public static final int MAX_RUNS_PER_JOB = Integer.getInteger(JobExt.class.getName()+".maxRunsPerJob", 10);
+    public static final int MAX_RUNS_PER_JOB = Integer.getInteger(JobExt.class.getName()+".maxRunsPerJob", 24);
 
     private JobLinks _links;
     private String name;
